@@ -46,4 +46,7 @@ class Oreiller:
     @classmethod
     def cleanup(cls):
         for img in cls._images:
-            img.close()
+            try:
+                img.close()
+            except Exception as e:
+                print(e)
