@@ -47,4 +47,5 @@ Processing api of line(x1, y1, x2, y2)
 🎉 Oreiller class
 🎉 .line
 🎉 .oline
+🔧 Fix cleanup: inform when closing closed images
 ```
