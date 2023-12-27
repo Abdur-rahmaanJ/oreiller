@@ -1,5 +1,7 @@
 from PIL import Image
 
 class Oreiller:
-    def open(*args, **kwargs):
+
+    @classmethod
+    def open(cls, *args, **kwargs):
         return Image.open(*args, **kwargs)
