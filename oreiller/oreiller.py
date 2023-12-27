@@ -8,6 +8,7 @@ except ImportError:
 class Oreiller:
     image = None
     _images = []
+    _fill = None
 
     @classmethod
     def open(cls, *args, **kwargs):
@@ -23,6 +24,10 @@ class Oreiller:
         return img
     
     @classmethod
+    def fill(cls, fillval):
+        cls._fill = fillval
+    
+    @classmethod
     def line(cls, *args, **kwargs):
         if cls.image is None:
             raise Exception('Please open or set an image')
@@ -36,7 +41,7 @@ class Oreiller:
             raise Exception('Please open or set an image')
         draw = ImageDraw.Draw(cls.image)
         shape = [(x1, y1), (x2, y2)]
-        draw.line(shape, **kwargs)
+        draw.line(shape, fill=cls._fill, **kwargs)
 
     @classmethod
     def cleanup(cls):
