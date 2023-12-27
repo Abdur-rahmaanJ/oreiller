@@ -1,6 +1,8 @@
 # oreiller
 
+The package for easy image manipulation. 
 
+The package for clean Pillow codebases.
 
 ```python
 from oreiller import Oreiller as orey
@@ -15,6 +17,25 @@ img.show()
 
 orey.cleanup()
 ```
+
+## Docs
+
+### .new
+
+Returns Image.new 
+
+
+### .fill
+
+Modifies fill value
+
+### .line
+
+Draws line without the need of ImageDraw
+
+### .oline
+
+Processing api of line(x1, y1, x2, y2)
 
 ## Changelog
 
