@@ -1,6 +1,6 @@
 # oreiller
 
-The package for easy image manipulation. 
+The package for easy image manipulation backed by pillow power. 
 
 The package for clean Pillow codebases.
 
