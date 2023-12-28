@@ -95,6 +95,7 @@ latest
 🎉 .oarc
 🎉 .chord
 🎉 .ochord
+🎉 .polygon
 
 0.1.0
 🎉 Package skeleton
