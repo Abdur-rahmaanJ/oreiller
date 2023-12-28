@@ -88,6 +88,7 @@ latest
 🎉 .chord
 🎉 .ochord
 🎉 .polygon
+🎉 .fill impacts all functions
 
 0.1.0
 🎉 Package skeleton
