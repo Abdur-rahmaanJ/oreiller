@@ -105,6 +105,8 @@ latest
 🎉 .ochord
 🎉 .polygon
 🎉 .fill impacts all functions
+🎉 .rectangle
+🎉 .orect
 
 0.1.0
 🎉 Package skeleton
