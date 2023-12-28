@@ -37,6 +37,13 @@ Draws line without the need of ImageDraw
 
 Processing api of line(x1, y1, x2, y2)
 
+### .otext
+
+- x
+- y
+- text
+- pilmoji keyword arguments
+
 ## Changelog
 
 [Emojilog 1.0](https://github.com/Abdur-rahmaanJ/emojilog)
