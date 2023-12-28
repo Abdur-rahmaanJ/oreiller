@@ -123,7 +123,7 @@ Processing api of line(x1, y1, x2, y2)
 [Emojilog 1.0](https://github.com/Abdur-rahmaanJ/emojilog)
 
 ```
-latest
+0.2.0
 🎉 .otext
 🎉 .font
 🎉 .arc
