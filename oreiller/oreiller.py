@@ -92,15 +92,11 @@ class Oreiller:
         if cls.image is None:
             raise Exception('Please open or set an image')
         img1 = ImageDraw.Draw(cls.image)   
-        img1.polygon(*args, **kwargs) 
 
-    @classmethod
-    def opolygon(cls, x1, y1, x2, y2, start, end, **kwargs):
-        if cls.image is None:
-            raise Exception('Please open or set an image')
-        img1 = ImageDraw.Draw(cls.image) 
-        shape = [(x1, y1), (x2, y2)] 
-        img1.polygon(shape, start, end, **kwargs) 
+        if cls._fill is not None:
+            if 'fill' not in kwargs:
+                kwargs['fill'] = cls._fill
+        img1.polygon(*args, **kwargs) 
 
     @classmethod
     def cleanup(cls):
