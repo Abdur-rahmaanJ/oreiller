@@ -59,6 +59,18 @@ Processing api of line(x1, y1, x2, y2)
 - y2
 - Keyword arguments same as pillow
 
+### .chord 
+
+- args same as pillow args
+
+### .ochord
+
+- x1
+- y1
+- x2
+- y2
+- Keyword arguments same as pillow
+
 ## Changelog
 
 [Emojilog 1.0](https://github.com/Abdur-rahmaanJ/emojilog)
