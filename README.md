@@ -99,6 +99,19 @@ Processing api of line(x1, y1, x2, y2)
 - y2
 - Keyword arguments same as pillow
 
+### .rectangle
+
+- args same as pillow args
+
+### .orounded_rect
+
+- x1
+- y1
+- x2
+- y2
+- radius
+- Keyword arguments same as pillow
+
 ### .polygon 
 
 - args same as pillow args
