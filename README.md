@@ -134,6 +134,8 @@ latest
 🎉 .orect
 🎉 .ellipse
 🎉 .oellipse
+🎉 .rectangle
+🎉 .orounded_rect
 
 0.1.0
 🎉 Package skeleton
