@@ -71,6 +71,14 @@ class Oreiller:
         shape = [(x1, y1), (x2, y2)] 
         img1.arc(shape, start, end, **kwargs) 
 
+
+    @classmethod
+    def chord(cls, *args, **kwargs):
+        if cls.image is None:
+            raise Exception('Please open or set an image')
+        img1 = ImageDraw.Draw(cls.image)   
+        img1.chord(*args, **kwargs) 
+
     @classmethod
     def cleanup(cls):
         for img in cls._images:
