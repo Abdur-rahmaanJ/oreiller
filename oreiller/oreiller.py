@@ -124,6 +124,18 @@ class Oreiller:
         img1.rectangle(*args, **kwargs) 
 
     @classmethod
+    def orect(cls, x1, y1, x2, y2, **kwargs):
+        if cls.image is None:
+            raise Exception('Please open or set an image')
+        if cls._fill is not None:
+            if 'fill' not in kwargs:
+                kwargs['fill'] = cls._fill
+
+        img1 = ImageDraw.Draw(cls.image) 
+        shape = [(x1, y1), (x2, y2)] 
+        img1.rectangle(shape, **kwargs) 
+
+    @classmethod
     def polygon(cls, *args, **kwargs):
         if cls.image is None:
             raise Exception('Please open or set an image')
