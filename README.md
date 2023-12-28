@@ -119,6 +119,8 @@ latest
 🎉 .fill impacts all functions
 🎉 .rectangle
 🎉 .orect
+🎉 .ellipse
+🎉 .oellipse
 
 0.1.0
 🎉 Package skeleton
