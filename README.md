@@ -19,6 +19,8 @@ orey.cleanup()
 
 ## Docs
 
+Methods prefixed by o is inspired by the [processing API](https://processing.org/reference).
+
 ### .new
 
 Returns Image.new 
