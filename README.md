@@ -87,6 +87,18 @@ Processing api of line(x1, y1, x2, y2)
 - y2
 - Keyword arguments same as pillow
 
+### .ellipse
+
+- args same as pillow args
+
+### .oellipse
+
+- x1
+- y1
+- x2
+- y2
+- Keyword arguments same as pillow
+
 ### .polygon 
 
 - args same as pillow args
