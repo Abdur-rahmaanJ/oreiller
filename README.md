@@ -57,6 +57,8 @@ Processing api of line(x1, y1, x2, y2)
 - y1
 - x2
 - y2
+- start
+- end
 - Keyword arguments same as pillow
 
 ### .chord 
@@ -64,6 +66,20 @@ Processing api of line(x1, y1, x2, y2)
 - args same as pillow args
 
 ### .ochord
+
+- x1
+- y1
+- x2
+- y2
+- start
+- end
+- Keyword arguments same as pillow
+
+### .rectangle
+
+- args same as pillow args
+
+### .orect
 
 - x1
 - y1
