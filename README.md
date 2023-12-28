@@ -43,6 +43,10 @@ Processing api of line(x1, y1, x2, y2)
 - text
 - pilmoji keyword arguments
 
+### .font
+
+- font(ImageDraw.font(...))
+
 ## Changelog
 
 [Emojilog 1.0](https://github.com/Abdur-rahmaanJ/emojilog)
