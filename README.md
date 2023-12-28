@@ -26,7 +26,7 @@ Returns Image.new
 
 ### .fill
 
-Modifies fill value
+Modifies fill value. Impacts all functions. No need to re-specify fill=
 
 ### .line
 
