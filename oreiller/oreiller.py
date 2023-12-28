@@ -59,9 +59,6 @@ class Oreiller:
     def otext(cls, x, y, text, **kwargs):
         if cls.image is None:
             raise Exception('Please open or set an image')
-        if cls._fill is not None:
-            if 'fill' not in kwargs:
-                kwargs['fill'] = cls._fill
         with Pilmoji(cls.image) as pilmoji:
             pilmoji.text((x, y), text, cls._fill, cls._font, **kwargs)
 
