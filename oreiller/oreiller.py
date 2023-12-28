@@ -158,6 +158,18 @@ class Oreiller:
         shape = [(x1, y1), (x2, y2)] 
         img1.ellipse(shape, **kwargs) 
 
+
+    @classmethod
+    def rounded_rectangle(cls, *args, **kwargs):
+        if cls.image is None:
+            raise Exception('Please open or set an image')
+        if cls._fill is not None:
+            if 'fill' not in kwargs:
+                kwargs['fill'] = cls._fill
+        
+        img1 = ImageDraw.Draw(cls.image)   
+        img1.rounded_rectangle(*args, **kwargs) 
+
     @classmethod
     def polygon(cls, *args, **kwargs):
         if cls.image is None:
