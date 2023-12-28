@@ -81,6 +81,8 @@ latest
 🎉 .font
 🎉 .arc
 🎉 .oarc
+🎉 .chord
+🎉 .ochord
 
 0.1.0
 🎉 Package skeleton
