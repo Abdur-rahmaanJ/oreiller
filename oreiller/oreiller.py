@@ -2,6 +2,7 @@
 try:
     from PIL import Image
     from PIL import ImageDraw
+    from pilmoji import Pilmoji
 except ImportError:
     pass
 
@@ -9,6 +10,7 @@ class Oreiller:
     image = None
     _images = []
     _fill = None
+    _font = None
 
     @classmethod
     def open(cls, *args, **kwargs):
@@ -22,6 +24,10 @@ class Oreiller:
         cls._images.append(img)
         cls.image = img
         return img
+    
+    @classmethod
+    def font(cls, font):
+        cls.font = font
     
     @classmethod
     def fill(cls, fillval):
@@ -42,6 +48,13 @@ class Oreiller:
         draw = ImageDraw.Draw(cls.image)
         shape = [(x1, y1), (x2, y2)]
         draw.line(shape, fill=cls._fill, **kwargs)
+
+    @classmethod
+    def otext(cls, x, y, text, **kwargs):
+        if cls.image is None:
+            raise Exception('Please open or set an image')
+        with Pilmoji(cls.image) as pilmoji:
+            pilmoji.text((x, y), text, cls._fill, cls._font, **kwargs)
 
     @classmethod
     def cleanup(cls):
