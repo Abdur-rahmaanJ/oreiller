@@ -57,6 +57,13 @@ class Oreiller:
             pilmoji.text((x, y), text, cls._fill, cls._font, **kwargs)
 
     @classmethod
+    def arc(cls, *args, **kwargs):
+        if cls.image is None:
+            raise Exception('Please open or set an image')
+        img1 = ImageDraw.Draw(cls.image)   
+        img1.arc(*args, **kwargs) 
+
+    @classmethod
     def cleanup(cls):
         for img in cls._images:
             try:
