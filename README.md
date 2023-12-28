@@ -138,6 +138,7 @@ latest
 🎉 .oellipse
 🎉 .rectangle
 🎉 .orounded_rect
+🔧 Fix otext
 
 0.1.0
 🎉 Package skeleton
