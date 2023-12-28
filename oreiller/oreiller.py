@@ -166,12 +166,11 @@ class Oreiller:
         if cls._fill is not None:
             if 'fill' not in kwargs:
                 kwargs['fill'] = cls._fill
-        print(kwargs)
         img1 = ImageDraw.Draw(cls.image)   
         img1.rounded_rectangle(*args, **kwargs) 
 
     @classmethod
-    def orounded_rectangle(cls, x1, y1, x2, y2, radius, **kwargs):
+    def orounded_rect(cls, x1, y1, x2, y2, radius, **kwargs):
         if cls.image is None:
             raise Exception('Please open or set an image')
         if cls._fill is not None:
@@ -181,7 +180,6 @@ class Oreiller:
         img1 = ImageDraw.Draw(cls.image) 
         shape = [(x1, y1), (x2, y2)] 
         kwargs["radius"] = radius
-        print(kwargs)
         img1.rounded_rectangle(shape, **kwargs) 
 
     @classmethod
