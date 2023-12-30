@@ -4,6 +4,8 @@ The package for easy image manipulation backed by pillow power.
 
 The package for clean Pillow codebases.
 
+Oreiller means a pillow in french.
+
 ```python
 from oreiller import Oreiller as orey
 
