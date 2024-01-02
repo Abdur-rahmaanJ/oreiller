@@ -1,7 +1,8 @@
 
 <p align="center">
   <br>
-  <a href="https://github.com/Abdur-rahmaanJ/oreiller"><img src="https://github.com/Abdur-rahmaanJ/oreiller/raw/stale/logo.png" alt="Oreiller"></a>
+  <a href="https://github.com/Abdur-rahmaanJ/oreiller">
+    <img src="https://github.com/Abdur-rahmaanJ/oreiller/blob/stable/logo.png?raw=true" alt="Oreiller" width=300px></a>
   <br>
 </p>
 
